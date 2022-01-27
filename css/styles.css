@@ -48,7 +48,8 @@ img {
 .footer-contacts-list,
 .filter-list,
 .projects-list,
-.contacts-list {
+.contacts-list,
+.team-social-list {
     list-style: none;
     text-decoration: none;
 }
@@ -243,6 +244,23 @@ img {
 
 }
 
+.features-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    outline: 1px solid green;
+    background-size: 70;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.features-item.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+
 .features-text {
     font-family: Roboto;
     font-style: normal;
@@ -345,8 +363,21 @@ img {
 .team-social-link {
     width: 44px;
     height: 44px;
-    background-color: green;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #AFB1B8;
+}
+
+.team-social-icon {
+    fill: currentColor;
+}
+
+.team-social-link:hover {
+    background-color: #2196F3;
+    color: #fff;
 }
 
 .team-social-item+.team-social-item {
