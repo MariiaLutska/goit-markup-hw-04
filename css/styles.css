@@ -553,7 +553,7 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: var(--footer-contacts-color));
+    color: var(--footer-contacts-color);
     margin-bottom: 20px;
 }
 
