@@ -143,14 +143,18 @@ img {
 .contacts-link {
     padding-top: 32px;
     padding-bottom: 32px;
-    display: block;
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.15;
     letter-spacing: 0.02em;
-    color: var(--main-text-color);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+
+    color: var(--main-text-color);
 }
 
 
@@ -164,16 +168,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.contacts-link {
-    height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: currentColor;
-
-    color: var(--main-text-color);
 }
 
 .contacts-icon {
@@ -193,6 +187,8 @@ img {
 
 /*HERO*/
 .hero {
+    width: 1600px;
+    margin: 0 auto;
     background: var(--hero-background-color);
     text-align: center;
     padding-top: 200px;
@@ -202,6 +198,7 @@ img {
     background-position: center;
     background-size: cover;
     flex-grow: 1;
+
 }
 
 .hero-title {
@@ -288,6 +285,7 @@ img {
     display: block;
     content: "";
     height: 120px;
+    margin-bottom: 30px;
     background: #F5F4FA;
     border-radius: 4px;
     background-size: auto;
@@ -355,8 +353,7 @@ img {
 }
 
 .team-content {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 32px;
     text-align: center;
 }
 
@@ -466,7 +463,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: currentColor;
+
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
@@ -477,11 +474,18 @@ img {
     color: #AFB1B8;
 }
 
+.customers-icon {
+    fill: currentColor;
+    margin: 16px 32px;
+}
 
-
-.customers-link:hover, .contacts-icon:focus {
+.customers-link:hover, .contacts-link:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color)
+}
+
+.customers-icon:hover, .contacts-icon:focus {
+    fill: var(--accent-color);
 }
 
 /*Footer*/
@@ -501,7 +505,8 @@ img {
     margin-right: 70px;
 }
 
-.footer-logo {
+.logo-link.footer-logo {
+    display: inline-block;
     padding: 0;
     margin-bottom: 20px;
 }
@@ -528,14 +533,9 @@ img {
     color: var(--accent-color);
 }
 
-.footer-contacts-item {
-    margin-top: 9px;
-    display: block;
-}
-
-address {
+/* .address {
     margin-top: 20px;
-}
+} */
 
 .footer-contacts-item {
     font-style: normal;
@@ -544,6 +544,12 @@ address {
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+    margin-top: 9px;
+    display: block;
+}
+
+.footer-contacts-item:first-child {
+    margin-top: 0;
 }
 
 .join {
@@ -609,6 +615,7 @@ address {
 .filter-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 
 }
 
@@ -636,7 +643,6 @@ address {
 }
 
 .filter-item {
-    margin-bottom: 50px;
     margin-right: 8px;
 }
 
