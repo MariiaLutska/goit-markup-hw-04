@@ -467,9 +467,6 @@ img {
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
-    /*margin-right: 0;
-    /* padding-top: 25px; */
-    /* padding-bottom: 25px; */
 
     color: #AFB1B8;
 }
@@ -532,10 +529,6 @@ img {
 .footer-contacts-link:focus {
     color: var(--accent-color);
 }
-
-/* .address {
-    margin-top: 20px;
-} */
 
 .footer-contacts-item {
     font-style: normal;
@@ -680,8 +673,6 @@ img {
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
-
-
 
 .projects-list {
     display: flex;
