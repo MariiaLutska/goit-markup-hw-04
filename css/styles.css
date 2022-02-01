@@ -473,7 +473,6 @@ img {
 
 .customers-icon {
     fill: currentColor;
-    margin: 16px 32px;
 }
 
 .customers-link:hover, .contacts-link:focus {
@@ -506,6 +505,7 @@ img {
     display: inline-block;
     padding: 0;
     margin-bottom: 20px;
+    margin-right: 0;
 }
 
 .footer-contacts-list {
@@ -695,7 +695,13 @@ img {
     margin-bottom: 0;
 }
 
-.project-item:hover {
+.project-item-link {
+    text-decoration: none;
+}
+
+.project-item-link:hover,
+.project-item-link:focus {
+    display: block;
     background: var(--button-color);
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
